@@ -1,0 +1,11 @@
+{
+	"compileOnSave": true,
+	"compilerOptions": {
+		"target": "es5",
+		"outDir": "Arquivos_JS",
+		"noEmitOnError": true,
+		"typeRoots": [
+			"node_modules/@types"
+		]
+	}
+}

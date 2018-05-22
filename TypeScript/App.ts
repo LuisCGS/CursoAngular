@@ -1,0 +1,15 @@
+import { Spacecraft, Containership } from './base_ships';
+import { MillenniumFalcon } from './starfighters';
+
+import * as _ from 'lodash';
+console.log(_.pad(" TypeScript Examples ", 50, "="));
+
+let ship = new Spacecraft('hyperdrive');
+ship.jumpIntoHyperspace();
+
+let falcon = new MillenniumFalcon();
+falcon.jumpIntoHyperspace();
+
+let goodForTheJob = (ship: Containership) => ship.cargoContainers > 2;
+
+console.log(`Is falcon good for the job? ${goodForTheJob(falcon) ? 'yes' : 'no'}`);
